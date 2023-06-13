@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agency</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        text-align: justify;
+      }
+      html {
+        font-size: 16px;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      /*== HEADER ==*/
+      header div.logo-image {
+        position: relative;
+        height: 100px;
+        width: 90%;
+        margin: 30px auto 0 auto;
+      }
+      header div.logo-img img {
+        position: absolute;
+        left: 0;
+      }
+      header div.header {
+        position: relative;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+      }
+      header div.header h1 {
+        margin-top: 0;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 5.5rem;
+      }
+      h1:not(div.header h1) {
+        margin: 0;
+        font-family: "Ubuntu", sans-serif;
+        text-align: justify;
+        margin-bottom: 1.25rem;
+      }
+      /*== HEADER MUDAR PARA PORRA DE REM ALL OF THEM! ==*/
+
+      /*== MAIN 
+      div.part-one img, div.part-two img {
+    height: 200px;
+    float: left;
+    margin-right: 30px;
+}
+.part-one, .part-two {
+    width: 600px;
+    height: 300px;
+    margin: 30px;
+    float: left;
+}*/
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        width: 90%;
+        margin: 50px auto 30px auto;
+      }
+      .part-one,
+      .part-two {
+        flex-basis: 550px;
+        height: 100%;
+        background-color: white;
+      }
+      div.part-one img,
+      div.part-two img {
+        height: 200px;
+        float: left;
+        margin-right: 20px;
+      }
+      /*== MAIN ==*/
+
+      /*== FOOTER ==*/
+      .bottom-part {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        clear: left;
+      }
+      .bottom-part-text {
+        display: block;
+        position: absolute;
+        top: 35%;
+        right: 0;
+        font-family: "Poppins", sans-serif;
+        color: midnightblue;
+        font-size: 1.2rem;
+      }
+      @media (max-width: 680px) {
+        div.logo-image img {
+          width: 100px;
+        }
+        header div.header h1 {
+          margin-top: 0;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 2.5rem;
+          text-align: center;
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          width: 85%;
+          margin: auto;
+        }
+        .part-one,
+        .part-two {
+          flex-basis: 350px;
+          height: 100%;
+          background-color: white;
+          margin-bottom: 20px;
+          padding: 10px;
+        }
+        div.part-one img,
+        div.part-two img {
+          height: 200px;
+          width: 100%;
+          float: none;
+        }
+        p {
+          font-weight: 600;
+        }
+      }
+      @media (max-width: 400px) {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      @media (min-width: 861px) {
+        header div.header h1 {
+          margin-top: 0;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 4.9rem;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-image">
+        <img src="./assets/images/logo.png" alt="logo-img" />
+      </div>
+      <div class="header">
+        <h1>
+          We are a
+          <span class="animation-pulse" style="color: midnightblue">Creative</span> Design<br />
+          Agency
+        </h1>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <article>
+          <div class="part-one">
+            <img src="./assets/images/beautiful.jpg" alt="beautiful-img" />
+            <h1>Beauty</h1>
+            <p>
+              We strive to create the most beautiful websites for all your
+              needs. Working closely with you to design and develop an amazing
+              website for your business.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="part-two">
+            <img
+              src="./assets/images/construction.jpg"
+              alt="construction-img"
+            />
+            <h1>Construction</h1>
+            <p>
+              Built by our team of professional developers, we ensure the most
+              rigourous and modern websites. Built from scratch using HTML and
+              CSS. Only the best for you.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="bottom-part">
+        <p class="bottom-part-text">Create. Develop. Design.</p>
+      </div>
+    </footer>
+  </body>
+</html>
